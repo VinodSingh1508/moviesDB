@@ -2,9 +2,6 @@ package com.javafreak.moviesDB;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class MoviesDbApplication {
@@ -12,6 +9,10 @@ public class MoviesDbApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MoviesDbApplication.class, args);
 	}
+	/*
+	Swagger UI Available at: http://localhost:8080/swagger-ui/index.html
+	https://stackoverflow.com/questions/71549614/springfox-type-javax-servlet-http-httpservletrequest-not-present
+	*/
 /*
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {

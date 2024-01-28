@@ -7,4 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface MovieRepository extends MongoRepository<Movie, ObjectId> {
     Movie findMovieByImdbId(String imdbId);
+    boolean existsByImdbId(String imdbId);
+    void deleteByImdbId(String imdbId);
+    
 }
